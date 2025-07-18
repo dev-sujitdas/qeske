@@ -1,10 +1,14 @@
   
-  const toggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
+const toggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
 
-  toggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
+toggle.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  toggle.innerHTML = mobileMenu.classList.contains('hidden') ? "☰" : "X";
+});
+
+
+  
 
 Shery.imageEffect(".images", {
   style: 5,

@@ -19,54 +19,31 @@
 </head>
 
 <body class="bg-[#151515]">
-    <!-- Navbar -->
-    <!-- <nav class="w-full ">
-        <div class="max-w-screen-2xl bg-[#151515] border-b-[1px] border-[#F3EB48] mx-auto relative">
-            <div class="max-w-screen-xl mx-auto flex justify-center items-center p-4">
+    <nav class="w-full">
+  <div class="max-w-screen-2xl bg-[#151515] border-b-[1px] border-[#F3EB48] mx-auto relative">
+        
+    <div class="flex justify-between items-center lg-p-0 p-4">
+        <div class="max-w-screen-xl mx-auto flex justify-center items-center p-4 md:block hidden">
                 <h2 class="michroma-bold text-amber-50 text-4xl">Qeske Maastricht</h2>
             </div>
-            <div class="absolute top-0 left-0 p-3 w-40 bg-[#151515]">
-                <ul class="text-amber-50 josefin-regular text-lg cursor-pointer uppercase">
-                    <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.home</li>
-                    <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.work-space</li>
-                    <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.location</li>
-                    <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.contact</li>
-                </ul>
-            </div>
-            <a href="mailto:community@qeskemaastricht.nl" class="underline absolute right-0 top-5">
+      <h2 class="h-12 w-12 md:hidden"><img class="w-full h-full" src="/Images/qeske-web.svg" alt=""></h2>
+
+      <!-- (mobile menu) -->
+      <div class="sm:hidden">
+        <button id="menu-toggle" class="text-[#F3EB48] focus:outline-none text-2xl">
+          ☰
+        </button>       
+      </div>      
+      
+      <a href="mailto:community@qeskemaastricht.nl" class="underline absolute right-0 top-5 md:block hidden">
                 <button
                     class="px-3 py-1 bg-white text-black border-t-4 border-r-4 border-[#F3EB48] hover:bg-[#F3EB48] hover:border-white josefin-semibold">
                     GET IN TOUCH
                 </button>
             </a>
-        </div>
-    </nav> -->
+    </div>     
 
-    <nav class="w-full">
-  <div class="max-w-screen-2xl bg-[#151515] border-b-[1px] border-[#F3EB48] mx-auto relative">
-    
-    <!-- Top section -->
-    <div class="max-w-screen-xl mx-auto flex justify-between items-center p-4">
-      <h2 class="michroma-bold text-amber-50 text-2xl md:text-3xl md:block hidden">Qeske Maastricht</h2>
-      <h2 class="h-12 w-12 md:hidden"><img class="w-full h-full" src="/Images/qeske-web.svg" alt=""></h2>
-
-      <!-- Hamburger Icon (mobile only) -->
-      <div class="sm:hidden">
-        <button id="menu-toggle" class="text-[#F3EB48] focus:outline-none text-2xl">
-          ☰
-        </button>
-      </div>
-
-      <!-- GET IN TOUCH button (hidden on mobile) -->
-      <a href="mailto:community@qeskemaastricht.nl" class="hidden sm:block">
-        <button
-          class="px-3 py-1 bg-white text-black border-t-4 border-r-4 border-[#F3EB48] hover:bg-[#F3EB48] hover:border-white josefin-semibold">
-          GET IN TOUCH
-        </button>
-      </a>
-    </div>
-
-    <!-- Navigation Links (desktop) -->
+    <!-- Navigation (desktop) -->
     <div class="absolute top-0 left-0 p-3 w-40 bg-[#151515] hidden sm:block">
       <ul class="text-amber-50 josefin-regular text-lg cursor-pointer uppercase">
         <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.home</li>
@@ -76,7 +53,7 @@
       </ul>
     </div>
 
-    <!-- Navigation Links (mobile) -->
+    <!-- Navigation (mobile) -->
     <div id="mobile-menu" class="sm:hidden px-4 pb-4 hidden">
       <ul class="text-amber-50 josefin-regular text-base uppercase space-y-2">
         <li class="hover:text-[#F3EB48] transition-all">.home</li>
