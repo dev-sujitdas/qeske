@@ -20,7 +20,7 @@
 
 <body class="bg-[#151515]">
     <!-- Navbar -->
-    <nav class="w-full ">
+    <!-- <nav class="w-full ">
         <div class="max-w-screen-2xl bg-[#151515] border-b-[1px] border-[#F3EB48] mx-auto relative">
             <div class="max-w-screen-xl mx-auto flex justify-center items-center p-4">
                 <h2 class="michroma-bold text-amber-50 text-4xl">Qeske Maastricht</h2>
@@ -40,15 +40,69 @@
                 </button>
             </a>
         </div>
-    </nav>
+    </nav> -->
 
-    <main>
+    <nav class="w-full">
+  <div class="max-w-screen-2xl bg-[#151515] border-b-[1px] border-[#F3EB48] mx-auto relative">
+    
+    <!-- Top section -->
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center p-4">
+      <h2 class="michroma-bold text-amber-50 text-2xl md:text-3xl">Qeske Maastricht</h2>
+
+      <!-- Hamburger Icon (mobile only) -->
+      <div class="sm:hidden">
+        <button id="menu-toggle" class="text-[#F3EB48] focus:outline-none text-2xl">
+          ☰
+        </button>
+      </div>
+
+      <!-- GET IN TOUCH button (hidden on mobile) -->
+      <a href="mailto:community@qeskemaastricht.nl" class="hidden sm:block">
+        <button
+          class="px-3 py-1 bg-white text-black border-t-4 border-r-4 border-[#F3EB48] hover:bg-[#F3EB48] hover:border-white josefin-semibold">
+          GET IN TOUCH
+        </button>
+      </a>
+    </div>
+
+    <!-- Navigation Links (desktop) -->
+    <div class="absolute top-0 left-0 p-3 w-40 bg-[#151515] hidden sm:block">
+      <ul class="text-amber-50 josefin-regular text-lg cursor-pointer uppercase">
+        <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.home</li>
+        <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.work-space</li>
+        <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.location</li>
+        <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.contact</li>
+      </ul>
+    </div>
+
+    <!-- Navigation Links (mobile) -->
+    <div id="mobile-menu" class="sm:hidden px-4 pb-4 hidden">
+      <ul class="text-amber-50 josefin-regular text-base uppercase space-y-2">
+        <li class="hover:text-[#F3EB48] transition-all">.home</li>
+        <li class="hover:text-[#F3EB48] transition-all">.work-space</li>
+        <li class="hover:text-[#F3EB48] transition-all">.location</li>
+        <li class="hover:text-[#F3EB48] transition-all">.contact</li>
+        <li>
+          <a href="mailto:community@qeskemaastricht.nl">
+            <button
+              class="mt-2 px-3 py-1 bg-white text-black border-t-4 border-r-4 border-[#F3EB48] hover:bg-[#F3EB48] hover:border-white josefin-semibold">
+              GET IN TOUCH
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+    <main class="overflow-hidden">
         <!-- Hero Section -->
         <section class="hero w-full">
             <div class="max-w-screen-2xl mx-auto lg:mt-[7rem] mt-[1rem] flex lg:flex-row flex-col-reverse px-5">
                 <div class="left lg:w-1/2 w-full mt-7">
                     <div class="flex items-center gap-5 text-amber-50">
-                        <span class="michroma-bold lg:text-[7rem] text-[4rem] tracking-[0.28rem] flex uppercase">
+                        <span class="michroma-bold lg:text-[7rem] text-[3.5rem] tracking-[0.28rem] flex uppercase">
                             <h1>Q</h1>
                             <h1>e</h1>
                             <h1>s</h1>
@@ -163,7 +217,7 @@
             </div>
         </section>
         <!-- Service Offerings -->
-        <section class="max-w-screen-2xl mx-auto py-5 text-white mt-20">
+        <section class="max-w-screen-2xl mx-auto py-5 text-white lg:mt-20 mt-0">
             <h2 class="text-4xl md:text-6xl josefin-semibold text-yellow-400 mb-4 leading-tight">Qeske in Action</h2>
             <div class="services mt-10 w-full flex flex-wrap justify-center items-center gap-10">
 
@@ -208,40 +262,40 @@
             </div>
         </section>
         <!-- Companies -->
-        <section class="company max-w-screen-2xl mx-auto py-5 text-white mt-20 overflow-hidden bg-[#F3EB48]">
+        <section class="company max-w-screen-2xl mx-auto py-5 text-white lg:mt-20 mt-5 overflow-hidden bg-[#F3EB48]">
             <div class="scroll-wrapper w-full whitespace-nowrap">
                 <div class="scroll-content flex items-center animate-scroll">
                     <!-- Logos (duplicated for infinite scroll effect) -->
-                    <img class="h-24 w-fit mx-8" src="/Images/sustainably.png" alt="Sustainably" />
-                    <img class="h-24 w-fit mx-8"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5" src="/Images/sustainably.png" alt="Sustainably" />
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5"
                         src="https://static.wixstatic.com/media/d6a4b6_25409b4a2785434281223e964b19969e~mv2.png/v1/crop/x_0,y_707,w_2480,h_758/fill/w_677,h_207,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d6a4b6_25409b4a2785434281223e964b19969e~mv2.png"
                         alt="Wix" />
-                    <img class="h-24 w-fit mx-8"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5"
                         src="https://stratopo.nl/wp-content/uploads/elementor/thumbs/logo-q6xs49yl5foprlygoaxc2dtwtpbnhk5xdgivkt3dns.png"
                         alt="Stratopo" />
-                    <img class="h-24 w-fit mx-8" src="https://toleria.nl/img/toleria-logo-text-company.png"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5" src="https://toleria.nl/img/toleria-logo-text-company.png"
                         alt="Toleria" />
-                    <img class="h-24 w-fit mx-8" src="https://pro-duck.com/wp-content/uploads/2024/06/Pro-Duck-Logo.png"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5" src="https://pro-duck.com/wp-content/uploads/2024/06/Pro-Duck-Logo.png"
                         alt="Pro Duck" />
-                    <img class="h-24 w-fit mx-8"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5"
                         src="https://denimx.nl/wp-content/uploads/2021/11/logo-denimx-white.png" alt="Denimx" />
-                    <img class="h-24 w-fit mx-8" src="https://www.uni-view.nl/logo/dark/horizontal.svg"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5" src="https://www.uni-view.nl/logo/dark/horizontal.svg"
                         alt="Uni View" />
-                    <img class="h-24 w-fit mx-8"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5"
                         src="https://www.atc-network.com/upload/air-traffic-control-network-logo.svg" alt="ATC" />
-                    <img class="h-24 w-fit mx-8" src="/Images/Ceriter.png" alt="Ceriter" />
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5" src="/Images/Ceriter.png" alt="Ceriter" />
 
-                    <img class="h-24 w-fit mx-8" src="/Images/sustainably.png" alt="Sustainably" />
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5" src="/Images/sustainably.png" alt="Sustainably" />
 
-                    <img class="h-24 w-fit mx-8"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5"
                         src="https://static.wixstatic.com/media/d6a4b6_25409b4a2785434281223e964b19969e~mv2.png/v1/crop/x_0,y_707,w_2480,h_758/fill/w_677,h_207,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d6a4b6_25409b4a2785434281223e964b19969e~mv2.png"
                         alt="Wix" />
-                    <img class="h-24 w-fit mx-8"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5"
                         src="https://stratopo.nl/wp-content/uploads/elementor/thumbs/logo-q6xs49yl5foprlygoaxc2dtwtpbnhk5xdgivkt3dns.png"
                         alt="Stratopo" />
-                    <img class="h-24 w-fit mx-8" src="https://toleria.nl/img/toleria-logo-text-company.png"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5" src="https://toleria.nl/img/toleria-logo-text-company.png"
                         alt="Toleria" />
-                    <img class="h-24 w-fit mx-8" src="https://www.uni-view.nl/logo/dark/horizontal.svg"
+                    <img class="lg:h-24 h-20 w-fit lg:mx-8 mx-5" src="https://www.uni-view.nl/logo/dark/horizontal.svg"
                         alt="Uni View" />
                 </div>
             </div>
@@ -249,9 +303,9 @@
 
     </main>
     <!-- footer -->
-    <footer class="w-full mt-20 bg-[#1e1e1e] border-t-2 border-zinc-700 relative">
-        <div class="max-w-screen-2xl mx-auto flex">
-            <div class="w-1/2 py-5 z-10">
+    <footer class="w-full lg:mt-20 mt-10 bg-[#1e1e1e] border-t-2 border-zinc-700 relative">
+        <div class="max-w-screen-2xl mx-auto flex lg:flex-row flex-col">
+            <div class="lg:w-1/2 w-full py-5 px-5 lg:px-0 z-10">
                 <div class="flex  items-center gap-2">
                     <img class="h-10 w-10" src="/Images/qeske-web.svg" alt="">
                     <h2 class="text-2xl michroma-extrabold text-white">Qeske Maastricht</h2>
@@ -271,7 +325,7 @@
                     </h3>
                 </div>
             </div>
-            <div class="w-1/2 p-5 flex gap-10 justify-end z-10">
+            <div class="lg:w-1/2 w-full p-5 flex lg:flex-row flex-col gap-10 justify-end z-10">
                 <div class="">
                     <h2 class="text-white josefin-semibold text-lg mb-4 uppercase">How we help</h2>
                     <div>
@@ -292,11 +346,11 @@
                 
             </div>
         </div>
-        <div class="w-full flex justify-center items-center mt-2 absolute bottom-0">
+        <div class="w-full flex justify-center items-center mt-2 absolute bottom-0 lg:block hidden">
             <h2 class="uppercase text-[8rem] michroma-extrabold text-zinc-700 z-0">Qeske</h2>
         </div>
         <div class="w-full p-2 ">
-            <div class="max-w-screen-2xl mx-auto flex justify-between items-center">
+            <div class="max-w-screen-2xl mx-auto flex lg:flex-row flex-col justify-between items-center">
                 <div class="text-zinc-400">
                     <h3>&copy;2025 Qeske.All rights reserved.</h3>
                 </div>

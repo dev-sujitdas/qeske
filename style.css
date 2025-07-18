@@ -195,6 +195,11 @@
   background-size: cover;
 }
 
+@media (max-width: 640px) {
+  #video-cursor {
+    display: none;
+  }
+}
 
 @keyframes scroll {
   0% {
