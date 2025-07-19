@@ -23,19 +23,19 @@
   <div class="max-w-screen-2xl bg-[#151515] border-b-[1px] border-[#F3EB48] mx-auto relative">
         
     <div class="flex justify-between items-center lg-p-0 p-4">
-        <div class="max-w-screen-xl mx-auto flex justify-center items-center p-4 md:block hidden">
+        <div class="max-w-screen-xl mx-auto flex justify-center items-center p-4 lg:block hidden">
                 <h2 class="michroma-bold text-amber-50 text-4xl">Qeske Maastricht</h2>
             </div>
-      <h2 class="h-12 w-12 md:hidden"><img class="w-full h-full" src="/Images/qeske-web.svg" alt=""></h2>
+      <h2 class="h-12 w-12 lg:hidden"><img class="w-full h-full" src="/Images/qeske-web.svg" alt=""></h2>
 
       <!-- (mobile menu) -->
-      <div class="sm:hidden">
+      <div class="lg:hidden">
         <button id="menu-toggle" class="text-[#F3EB48] focus:outline-none text-2xl">
           ☰
         </button>       
       </div>      
       
-      <a href="mailto:community@qeskemaastricht.nl" class="underline absolute right-0 top-5 md:block hidden">
+      <a href="mailto:community@qeskemaastricht.nl" class="underline absolute right-0 top-10 lg:block hidden">
                 <button
                     class="px-3 py-1 bg-white text-black border-t-4 border-r-4 border-[#F3EB48] hover:bg-[#F3EB48] hover:border-white josefin-semibold">
                     GET IN TOUCH
@@ -44,7 +44,7 @@
     </div>     
 
     <!-- Navigation (desktop) -->
-    <div class="absolute top-0 left-0 p-3 w-40 bg-[#151515] hidden sm:block">
+    <div class="absolute top-0 left-0 p-3 w-40 bg-[#151515] hidden lg:block">
       <ul class="text-amber-50 josefin-regular text-lg cursor-pointer uppercase">
         <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.home</li>
         <li class="hover:text-[#F3EB48] hover:px-1 transition-all">.work-space</li>
@@ -54,7 +54,7 @@
     </div>
 
     <!-- Navigation (mobile) -->
-    <div id="mobile-menu" class="sm:hidden px-4 pb-4 hidden">
+    <div id="mobile-menu" class="lg:hidden px-4 pb-4 hidden">
       <ul class="text-amber-50 josefin-regular text-base uppercase space-y-2">
         <li class="hover:text-[#F3EB48] transition-all">.home</li>
         <li class="hover:text-[#F3EB48] transition-all">.work-space</li>
@@ -77,32 +77,29 @@
     <main class="overflow-hidden">
         <!-- Hero Section -->
         <section class="hero w-full">
-            <div class="max-w-screen-2xl mx-auto lg:mt-[7rem] mt-[3rem] flex lg:flex-row flex-col-reverse px-5">
+            <div class="max-w-screen-2xl mx-auto lg:mt-[7rem] mt-[3rem] flex md:flex-row flex-col-reverse px-5">
                 <div class="left lg:w-1/2 w-full mt-7">
-                    <div class="flex items-center gap-5 text-amber-50">
-                        <span class="michroma-bold lg:text-[7rem] text-[3.5rem] tracking-[0.28rem] flex uppercase">
+                    <div class="flex items-center gap-5 text-amber-50 xl:h-[8rem] lg:h-[7rem] md:h-[5rem] h-[4.5rem]  flex items-center">
+                        <span class="michroma-semibold xl:text-[7rem] lg:text-[6rem] md:text-[4rem] text-[3.5rem] tracking-[0.28rem] flex uppercase">
                             <h1>Q</h1>
                             <h1>e</h1>
                             <h1>s</h1>
                             <h1>k</h1>
                             <h1>e</h1>
                         </span>
+                    </div>                   
+                    <div class="flex items-center gap-5 h-[3.25rem] lg:h-[4.76rem] xl:h-[5.5rem] text-amber-50 mtlg ">
+                        <h2 class="michroma-semibold text-4xl lg:text-6xl xl:text-7xl">Workspaces </h2>
                     </div>
-                    <!-- <p class="text-xl michroma-thin-italic text-zinc-400 mt-1 tracking-wide">
-                        Your creative base in Maastricht
-                    </p> -->
-                    <div class="flex items-center gap-5  text-amber-50">
-                        <h2 class="michroma-semibold text-4xl lg:text-7xl">Workspaces </h2>
-                    </div>
-                    <div class="flex items-center gap-5 text-amber-50 mt-5">
-                        <h2 class="michroma-semibold text-4xl lg:text-7xl">That</h2>
-                        <h2 class="michroma-semibold text-4xl lg:text-7xl">Inspire</h2>
+                    <div class="flex items-center gap-5 text-amber-50 h-[3.25rem] lg:h-[4.76rem] xl:h-[5.5rem] text-amber-50 ">
+                        <h2 class="michroma-semibold text-4xl lg:text-6xl xl:text-7xl">That</h2>
+                        <h2 class="michroma-semibold text-4xl lg:text-6xl xl:text-7xl">Inspire</h2>
                         <h2 class="michroma-thin text-3xl">→</h2>
                     </div>
 
                     <div class="h-14 w-14 md:h-16 md:w-16 bg-[#FACC15] mt-10 flex justify-center items-center relative">
                         <h2 class="text-4xl">→</h2>
-                        <h2 class="w-[25rem] absolute md:left-[3.2rem] left-[2.8rem] top-4 text-amber-50 text-3xl md:text-4xl josefin-regular">
+                        <h2 class="w-[25rem] absolute md:left-[3.2rem] left-[2.8rem] top-4 text-amber-50 text-3xl lg:text-4xl josefin-regular">
                             <span class="josefin-semibold">E</span>ntrepreneur Hotspot
                         </h2>
                     </div>
@@ -117,14 +114,14 @@
                 </div>
             </div>
             <div class="max-w-screen-2xl mx-auto flex lg:flex-row flex-col justify-center items-center mt-20 mb-20 gap-10 relative">
-                <div class="h-[8rem] w-[15rem] bg-amber-300">
+                <div class="h-[10rem] w-[15rem] bg-amber-300">
                     <img class="w-full h-full" src="/Images/image-6.jpg" alt="" />
                 </div>
-                <div class="lg:w-[28rem] w-full px-5 lg-p-0">
-                    <h3 class="text-2xl text-amber-50 josefin-regular underline-offset-1 underline">
+                <div class="lg:w-[30rem] w-full px-5 lg-p-0">
+                    <h3 class="text-[1.7rem] text-amber-50 josefin-regular underline-offset-1 underline">
                         "The best platform to find workspace"
                     </h3>
-                    <p class="text-zinc-300 poppins-extralight-italic text-base">
+                    <p class="text-zinc-300 poppins-extralight-italic text-lg">
                         Coworking spaces provide entrepreneurs with shared office environments that reduce costs and
                         offer greater flexibility and networking opportunities.
                     </p>
@@ -149,7 +146,7 @@
         <!-- Contact -->
         <section class="max-w-screen-2xl mx-auto py-5 text-white mt-0 mb-0 lg:mt-20 lg:mb-20">
             <div class="flex lg:flex-row flex-col justify-between gap-8 items-center">
-                <div class="lg:w-[35%] w-full">
+                <div class="lg:w-[35%] w-full flex justify-center items-center">
                     <img src="https://www.qeskemaastricht.nl/qeske%2dweb.svg" alt="Qeske Logo"
                         class="h-48 w-48 lg:h-96 lg:w-96 mx-auto md:mx-0" />
                 </div>
@@ -195,7 +192,7 @@
             </div>
         </section>
         <!-- Service Offerings -->
-        <section class="max-w-screen-2xl mx-auto py-5 text-white lg:mt-20 mt-0">
+        <section class="max-w-screen-2xl mx-auto py-5 px-5 text-white lg:mt-20 mt-0">
             <h2 class="text-4xl md:text-6xl josefin-semibold text-yellow-400 mb-4 leading-tight">Qeske in Action</h2>
             <div class="services mt-10 w-full flex flex-wrap justify-center items-center gap-10">
 
